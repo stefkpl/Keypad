@@ -47,7 +47,7 @@ do {							 \
 		pinMode(_pin, INPUT);	 \
 		digitalWrite(_pin, 1);	 \
 	if(_mode != INPUT_PULLUP)	 \
-		pinMode(_pin, _mode);	 \
+		pinMode(_pin, (WiringPinMode) _mode);	 \
 }while(0)
 #endif
 
